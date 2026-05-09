@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --background: #f7f3ea;
+  --foreground: #071018;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top left, rgba(200, 164, 93, 0.16), transparent 28rem), var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: rgba(200, 164, 93, 0.35);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-10;
+}
+
+.kicker {
+  @apply text-xs font-semibold uppercase tracking-[0.32em] text-hold-bronze;
+}
+
+.gold-divider {
+  @apply h-px w-full bg-gradient-to-r from-transparent via-hold-gold/70 to-transparent;
+}
