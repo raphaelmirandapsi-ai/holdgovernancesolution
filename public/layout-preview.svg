@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1800" viewBox="0 0 1440 1800" role="img" aria-labelledby="title desc">
+  <title id="title">Preview visual do layout frontend da H.O.L.D. Governance Solution</title>
+  <desc id="desc">Mockup ilustrativo da home com header, hero, fluxo, pilares, problema, ecossistema e chamada para reunião.</desc>
+  <defs>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071018"/>
+      <stop offset="0.55" stop-color="#172231"/>
+      <stop offset="1" stop-color="#0B1118"/>
+    </linearGradient>
+    <radialGradient id="goldGlow" cx="0.2" cy="0.12" r="0.7">
+      <stop offset="0" stop-color="#C8A45D" stop-opacity="0.45"/>
+      <stop offset="0.42" stop-color="#C8A45D" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#C8A45D" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#071018" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .sans{font-family:Inter,Arial,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}.small{font-size:16px}.kicker{font-size:14px;font-weight:700;letter-spacing:5px;text-transform:uppercase}.title{font-size:68px;font-weight:600}.h2{font-size:48px;font-weight:600}.body{font-size:22px;line-height:1.45}.muted{fill:#071018;opacity:.64}.whiteMuted{fill:#fff;opacity:.72}.gold{fill:#C8A45D}.ink{fill:#071018}.pearl{fill:#F7F3EA}.cardTitle{font-size:25px;font-weight:700}.cardText{font-size:17px;line-height:1.45;opacity:.66}
+    </style>
+  </defs>
+
+  <rect width="1440" height="1800" fill="#F7F3EA"/>
+  <circle cx="160" cy="120" r="360" fill="#C8A45D" opacity="0.13"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1440" height="96" fill="#F7F3EA" opacity="0.96"/>
+  <line x1="0" y1="95" x2="1440" y2="95" stroke="#071018" stroke-opacity="0.10"/>
+  <rect x="72" y="26" width="44" height="44" rx="16" fill="#071018" stroke="#C8A45D"/>
+  <text x="94" y="55" text-anchor="middle" class="sans gold" font-size="16" font-weight="800">H</text>
+  <text x="132" y="43" class="sans ink" font-size="17" font-weight="800" letter-spacing="4">H.O.L.D.</text>
+  <text x="132" y="66" class="sans muted" font-size="11" font-weight="700" letter-spacing="2.4">GOVERNANCE SOLUTION</text>
+  <g class="sans" font-size="15" font-weight="700" fill="#071018" opacity="0.72">
+    <text x="484" y="57">Home</text><text x="552" y="57">Sobre</text><text x="626" y="57">Método H.O.L.D.</text><text x="770" y="57">SIPI</text><text x="830" y="57">Ecossistema</text><text x="948" y="57">Conteúdos</text><text x="1056" y="57">Contato</text>
+  </g>
+  <rect x="1190" y="25" width="178" height="48" rx="24" fill="#071018"/>
+  <text x="1279" y="55" text-anchor="middle" class="sans" font-size="15" font-weight="800" fill="#fff">Solicitar reunião</text>
+
+  <!-- Hero -->
+  <rect x="0" y="96" width="1440" height="660" fill="url(#hero)"/>
+  <rect x="0" y="96" width="1440" height="660" fill="url(#goldGlow)"/>
+  <text x="72" y="210" class="sans kicker gold">VITRINE INSTITUCIONAL</text>
+  <text x="72" y="292" class="serif title" fill="#fff">Governança sofisticada</text>
+  <text x="72" y="370" class="serif title" fill="#fff">para decisões que não</text>
+  <text x="72" y="448" class="serif title" fill="#fff">admitem improviso.</text>
+  <text x="72" y="510" class="sans body whiteMuted">A H.O.L.D. apoia lideranças em problemas críticos, conectando</text>
+  <text x="72" y="542" class="sans body whiteMuted">tese, método, ecossistema e tecnologia segura.</text>
+  <rect x="72" y="592" width="174" height="56" rx="28" fill="#C8A45D"/>
+  <text x="159" y="627" text-anchor="middle" class="sans" font-size="16" font-weight="900" fill="#071018">Solicitar reunião</text>
+  <rect x="266" y="592" width="182" height="56" rx="28" fill="none" stroke="#fff" stroke-opacity="0.25"/>
+  <text x="357" y="627" text-anchor="middle" class="sans" font-size="16" font-weight="900" fill="#fff">Conhecer método</text>
+
+  <!-- Flow card -->
+  <g filter="url(#shadow)">
+    <rect x="826" y="174" width="486" height="500" rx="34" fill="#fff" opacity="0.08" stroke="#fff" stroke-opacity="0.14"/>
+    <rect x="858" y="206" width="422" height="436" rx="28" fill="#F7F3EA"/>
+  </g>
+  <text x="890" y="254" class="sans kicker" fill="#8B6F43">FLUXO ILUSTRATIVO</text>
+  <g class="sans" font-size="20" font-weight="800" fill="#071018">
+    <rect x="890" y="288" width="358" height="58" rx="20" fill="#fff" stroke="#071018" stroke-opacity="0.10"/><circle cx="924" cy="317" r="20" fill="#071018"/><text x="924" y="324" text-anchor="middle" fill="#C8A45D" font-size="15">1</text><text x="962" y="324">Problema crítico</text>
+    <rect x="890" y="362" width="358" height="58" rx="20" fill="#fff" stroke="#071018" stroke-opacity="0.10"/><circle cx="924" cy="391" r="20" fill="#071018"/><text x="924" y="398" text-anchor="middle" fill="#C8A45D" font-size="15">2</text><text x="962" y="398">Governança</text>
+    <rect x="890" y="436" width="358" height="58" rx="20" fill="#fff" stroke="#071018" stroke-opacity="0.10"/><circle cx="924" cy="465" r="20" fill="#071018"/><text x="924" y="472" text-anchor="middle" fill="#C8A45D" font-size="15">3</text><text x="962" y="472">Leitura contextual</text>
+    <rect x="890" y="510" width="358" height="58" rx="20" fill="#fff" stroke="#071018" stroke-opacity="0.10"/><circle cx="924" cy="539" r="20" fill="#071018"/><text x="924" y="546" text-anchor="middle" fill="#C8A45D" font-size="15">4</text><text x="962" y="546">Decisão orientada</text>
+    <rect x="890" y="584" width="358" height="58" rx="20" fill="#fff" stroke="#071018" stroke-opacity="0.10"/><circle cx="924" cy="613" r="20" fill="#071018"/><text x="924" y="620" text-anchor="middle" fill="#C8A45D" font-size="15">5</text><text x="962" y="620">Continuidade</text>
+  </g>
+
+  <!-- Thesis / pillars -->
+  <text x="72" y="860" class="sans kicker" fill="#8B6F43">A TESE</text>
+  <text x="72" y="924" class="serif h2 ink">Toda decisão sensível precisa de contexto,</text>
+  <text x="72" y="982" class="serif h2 ink">responsabilidade e continuidade.</text>
+  <text x="72" y="1032" class="sans body muted">A HOLD reduz ruído, organiza evidências e transforma complexidade institucional em caminhos confiáveis.</text>
+  <g filter="url(#shadow)">
+    <rect x="72" y="1088" width="300" height="182" rx="26" fill="#fff" opacity="0.84"/><text x="104" y="1142" class="sans cardTitle ink">Governança</text><text x="104" y="1184" class="sans cardText ink">Estrutura de decisão, papéis e</text><text x="104" y="1210" class="sans cardText ink">trilhas de evidência.</text>
+    <rect x="400" y="1088" width="300" height="182" rx="26" fill="#fff" opacity="0.84"/><text x="432" y="1142" class="sans cardTitle ink">Inteligência</text><text x="432" y="1184" class="sans cardText ink">Leitura integrada de contexto,</text><text x="432" y="1210" class="sans cardText ink">sinais e prioridades.</text>
+    <rect x="728" y="1088" width="300" height="182" rx="26" fill="#fff" opacity="0.84"/><text x="760" y="1142" class="sans cardTitle ink">Continuidade</text><text x="760" y="1184" class="sans cardText ink">Planos acionáveis e ciclos de</text><text x="760" y="1210" class="sans cardText ink">evolução institucional.</text>
+    <rect x="1056" y="1088" width="300" height="182" rx="26" fill="#fff" opacity="0.84"/><text x="1088" y="1142" class="sans cardTitle ink">Segurança</text><text x="1088" y="1184" class="sans cardText ink">Confidencialidade e exposição</text><text x="1088" y="1210" class="sans cardText ink">mínima de dados sensíveis.</text>
+  </g>
+
+  <!-- Problem section -->
+  <rect x="0" y="1340" width="1440" height="280" fill="#fff" opacity="0.56"/>
+  <text x="72" y="1414" class="sans kicker" fill="#8B6F43">O PROBLEMA</text>
+  <text x="72" y="1478" class="serif h2 ink">Decisões clínicas, reputacionais e</text>
+  <text x="72" y="1536" class="serif h2 ink">operacionais sob pressão.</text>
+  <g class="sans" font-size="19" font-weight="800" fill="#071018" opacity="0.78">
+    <rect x="826" y="1400" width="230" height="62" rx="18" fill="#F7F3EA" stroke="#071018" stroke-opacity="0.10"/><text x="854" y="1438">Risco reputacional</text>
+    <rect x="1080" y="1400" width="230" height="62" rx="18" fill="#F7F3EA" stroke="#071018" stroke-opacity="0.10"/><text x="1108" y="1438">Dados sensíveis</text>
+    <rect x="826" y="1484" width="230" height="62" rx="18" fill="#F7F3EA" stroke="#071018" stroke-opacity="0.10"/><text x="854" y="1522">Pressão por resposta</text>
+    <rect x="1080" y="1484" width="230" height="62" rx="18" fill="#F7F3EA" stroke="#071018" stroke-opacity="0.10"/><text x="1108" y="1522">Baixa continuidade</text>
+  </g>
+
+  <!-- CTA -->
+  <rect x="72" y="1662" width="1296" height="110" rx="34" fill="#071018"/>
+  <text x="112" y="1712" class="sans kicker gold">PRÓXIMO PASSO</text>
+  <text x="112" y="1750" class="serif" font-size="34" font-weight="600" fill="#fff">Converse com a HOLD sobre seu desafio institucional.</text>
+  <rect x="1166" y="1690" width="162" height="54" rx="27" fill="#C8A45D"/>
+  <text x="1247" y="1724" text-anchor="middle" class="sans" font-size="15" font-weight="900" fill="#071018">Solicitar reunião</text>
+</svg>

@@ -22,6 +22,10 @@ Site institucional moderno para reposicionar `www.holdsolution.com` como vitrine
 
 O site apresenta tese, problema, visão geral do método, fluxogramas ilustrativos, benefícios, pilares, ecossistema estratégico e chamada para reunião. A comunicação evita expor lógica algorítmica interna, pesos de matriz, fórmulas proprietárias, detalhes sensíveis do SIPI, metodologia clínica completa e parâmetros de scoring.
 
+## Preview do layout
+
+Uma prévia visual da home está disponível em [`public/layout-preview.svg`](./public/layout-preview.svg). Ela ilustra a hierarquia frontend: header, hero, fluxograma, tese/pilares, problema e CTA final.
+
 ## Publicação e domínio
 
 Para apontar `www.holdsolution.com` para o site, siga o passo a passo em [`DEPLOYMENT.md`](./DEPLOYMENT.md). O guia cobre deploy, DNS, redirecionamento do domínio raiz, preservação de e-mails corporativos e checklist de validação.
