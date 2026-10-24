@@ -2,6 +2,8 @@
 
 Site institucional em português, criado com React e Vite. Inclui apresentação da empresa, soluções navegáveis, metodologia, perguntas frequentes e briefing comercial compartilhável por WhatsApp ou e-mail.
 
+A identidade usa carvão, petróleo e turquesa, com o cérebro estilizado da HOLD. Os arquivos de logo e fundo de reuniões estão em `public/brand/`; veja [a documentação da identidade visual](docs/IDENTIDADE_VISUAL.md).
+
 ## Desenvolvimento
 
 Requisitos: Node.js 24 LTS (mínimo 22.12) e npm.

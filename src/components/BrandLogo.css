@@ -1,0 +1,59 @@
+.hold-brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  width: var(--hold-logo-width, 245px);
+  max-width: 100%;
+  color: #eef9f8;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+.hold-brand-logo__wordmark {
+  display: block;
+  width: 66%;
+  height: auto;
+  flex-shrink: 0;
+  overflow: visible;
+}
+.hold-brand-logo__slogan {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 8px;
+  font-family: "Manrope Variable", sans-serif;
+  font-size: 8px;
+  font-weight: 750;
+  line-height: 1.25;
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+  color: #68ded5;
+}
+.hold-brand-logo__slogan b {
+  color: #eef9f8;
+  font-weight: inherit;
+}
+.hold-brand-logo--compact {
+  width: var(--hold-logo-width, 155px);
+}
+.hold-brand-logo--compact .hold-brand-logo__wordmark {
+  width: 100%;
+}
+.hold-brand-logo__asset {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+@media (max-width: 420px) {
+  .hold-brand-logo {
+    --hold-logo-width: 215px;
+    gap: 11px;
+  }
+  .hold-brand-logo__slogan {
+    font-size: 7px;
+    letter-spacing: 0.5px;
+  }
+  .hold-brand-logo--compact {
+    --hold-logo-width: 145px;
+  }
+}

@@ -1,150 +1,91 @@
+import { useId } from "react";
+import BrainMark from "./BrainMark.jsx";
 import "./HeroVisual.css";
 
 export default function HeroVisual() {
+  const dotsId = `hold-neural-dots-${useId().replace(/:/g, "")}`;
   return (
     <div
       className="hold-visual"
       role="img"
-      aria-label="Visão integrada da HOLD: governança, estratégia e gestão conectadas para transformar decisões em próximos passos."
+      aria-label="O cérebro da HOLD conecta pessoas, visão integrada e decisões alinhadas. Humanizar, organizar, liderar e desenvolver."
     >
       <div className="hold-visual__content" aria-hidden="true">
         <div className="hold-visual__heading">
           <span className="hold-visual__live-dot" />
-          UM NOVO PONTO DE VISTA
+          PESSOAS NO CENTRO.
         </div>
-        <div className="hold-visual__coordinates">VISÃO / AÇÃO</div>
+        <div className="hold-visual__coordinates">HOLD / CONECTA</div>
 
         <svg className="hold-visual__diagram" viewBox="0 0 500 490" fill="none">
           <defs>
             <pattern
-              id="hold-visual-grid"
-              width="32"
-              height="32"
+              id={dotsId}
+              width="22"
+              height="22"
               patternUnits="userSpaceOnUse"
             >
-              <path d="M32 0H0V32" stroke="currentColor" strokeWidth="0.65" />
+              <circle cx="1" cy="1" r=".6" fill="#68ded5" opacity=".22" />
             </pattern>
           </defs>
-          <rect
-            width="500"
-            height="490"
-            fill="url(#hold-visual-grid)"
-            opacity=".13"
-          />
-          <path
-            d="M0 246H500M250 0V490"
-            stroke="currentColor"
-            strokeOpacity=".12"
-          />
-          <circle
-            cx="250"
-            cy="246"
-            r="174"
-            stroke="currentColor"
-            strokeOpacity=".12"
-          />
-          <circle
-            cx="250"
-            cy="246"
-            r="124"
-            stroke="currentColor"
-            strokeOpacity=".27"
-          />
-          <circle
-            cx="250"
-            cy="246"
-            r="84"
-            stroke="currentColor"
-            strokeOpacity=".18"
-            strokeDasharray="3 6"
-          />
-          <path
-            d="M250 72A174 174 0 0 1 424 246"
-            stroke="#d9ef8b"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
-          <path
-            d="M126 246A124 124 0 0 0 250 370"
-            stroke="#d9ef8b"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
-          <path
-            d="M250 162V126H325M166 246H92V337M334 246H394V346"
-            stroke="#b4c8b4"
+          <rect width="500" height="490" fill={`url(#${dotsId})`} />
+          <g stroke="#68ded5" strokeWidth=".7" strokeOpacity=".14">
+            <path d="M-70 437C70 305 258 510 566 264M-65 411C82 289 252 480 552 246M-60 385C92 273 249 451 538 228M-55 359C103 257 245 421 524 210M-50 333C114 241 242 392 510 192M-45 307C125 225 238 362 496 174M-40 281C136 209 235 333 482 156" />
+            <path d="M17 466C77 357 83 277 88 208M64 479C118 365 125 289 125 213M111 490C160 381 168 306 162 222M158 499C203 392 212 317 199 230M205 508C246 405 256 333 236 239M252 517C289 418 300 345 273 247M299 526C332 432 344 358 310 256M346 535C375 444 388 371 347 264M393 544C418 457 432 383 384 273M440 553C461 469 476 396 421 281" />
+          </g>
+          <g
+            stroke="#68ded5"
             strokeWidth="1"
-            strokeDasharray="3 4"
-          />
-          <circle cx="250" cy="72" r="4" fill="#d9ef8b" />
-          <circle cx="424" cy="246" r="4" fill="#d9ef8b" />
-          <circle cx="126" cy="246" r="4" fill="#d9ef8b" />
-          <circle cx="250" cy="370" r="4" fill="#d9ef8b" />
+            strokeOpacity=".48"
+            strokeLinecap="round"
+          >
+            <path d="M99 244C93 198 145 139 203 124C256 110 318 124 358 152" />
+            <path d="M272 275C309 291 340 316 384 338" />
+            <path d="M158 279C135 302 117 324 94 351" />
+            <path d="M327 195C360 205 392 227 415 258" strokeDasharray="2 5" />
+          </g>
+          <g fill="#68ded5">
+            <circle cx="99" cy="244" r="3" />
+            <circle cx="203" cy="124" r="3" />
+            <circle cx="358" cy="152" r="3" />
+            <circle cx="384" cy="338" r="3" />
+            <circle cx="94" cy="351" r="3" />
+            <circle cx="415" cy="258" r="2.5" />
+          </g>
+          <g fill="#68ded5" opacity=".34">
+            <circle cx="53" cy="365" r="2" />
+            <circle cx="129" cy="384" r="2" />
+            <circle cx="230" cy="392" r="2" />
+            <circle cx="333" cy="369" r="2" />
+            <circle cx="425" cy="327" r="2" />
+            <circle cx="472" cy="291" r="2" />
+          </g>
           <path
             d="M40 83H49M44.5 78.5V87.5M451 403H460M455.5 398.5V407.5"
-            stroke="currentColor"
-            strokeOpacity=".5"
+            stroke="#68ded5"
+            strokeOpacity=".25"
           />
-          <circle
-            cx="250"
-            cy="246"
-            r="62"
-            fill="#214a3c"
-            stroke="#73966a"
-            strokeOpacity=".5"
-          />
-          <rect x="213" y="209" width="74" height="74" rx="16" fill="#d9ef8b" />
-          <path
-            d="M232 226V266M268 226V266M232 246H268"
-            stroke="#193f32"
-            strokeWidth="11"
-          />
-          <path d="M257 239H278" stroke="#193f32" strokeWidth="2" />
-          <text
-            x="250"
-            y="317"
-            textAnchor="middle"
-            fill="#d7e2d1"
-            fontSize="9"
-            letterSpacing="3"
-            fontFamily="inherit"
-          >
-            HOLD / CONECTA
-          </text>
-          <text
-            x="94"
-            y="179"
-            transform="rotate(-55 94 179)"
-            fill="#a6bea8"
-            fontSize="8"
-            letterSpacing="2"
-            fontFamily="inherit"
-          >
-            GOVERNANÇA
-          </text>
-          <text
-            x="364"
-            y="297"
-            transform="rotate(-64 364 297)"
-            fill="#a6bea8"
-            fontSize="8"
-            letterSpacing="2"
-            fontFamily="inherit"
-          >
-            ESTRATÉGIA
-          </text>
         </svg>
+
+        <div className="hold-visual__brain">
+          <BrainMark />
+        </div>
 
         <div className="hold-visual__card hold-visual__card--vision">
           <div className="hold-visual__card-top">
             <span className="hold-visual__icon">
               <svg width="17" height="17" viewBox="0 0 20 20" fill="none">
                 <path
-                  d="m3 7 7-4 7 4-7 4-7-4Zm0 6 7 4 7-4M3 10l7 4 7-4"
+                  d="M3 10c4-6 10-6 14 0-4 6-10 6-14 0Z"
                   stroke="currentColor"
-                  strokeWidth="1.3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  strokeWidth="1.2"
+                />
+                <circle
+                  cx="10"
+                  cy="10"
+                  r="2"
+                  stroke="currentColor"
+                  strokeWidth="1.2"
                 />
               </svg>
             </span>
@@ -198,10 +139,9 @@ export default function HeroVisual() {
             <strong>próximo passo.</strong>
           </span>
         </div>
-
         <div className="hold-visual__bottom">
-          <span>MENOS COMPLEXIDADE. MAIS DIREÇÃO.</span>
-          <svg width="32" height="12" viewBox="0 0 32 12" fill="none">
+          <span>HUMANIZAR. ORGANIZAR. LIDERAR. DESENVOLVER.</span>
+          <svg width="24" height="12" viewBox="0 0 32 12" fill="none">
             <path
               d="M0 6h30m-5-5 5 5-5 5"
               stroke="currentColor"

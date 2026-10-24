@@ -9,16 +9,16 @@ import {
   Menu,
   X,
   Layers3,
-  Route,
   Network,
   Compass,
   CheckCheck,
   Download,
   Copy,
   Mail,
-  MoveUpRight,
 } from "lucide-react";
 import HeroVisual from "./components/HeroVisual.jsx";
+import BrandLogo from "./components/BrandLogo.jsx";
+import BrainMark from "./components/BrainMark.jsx";
 import { contact } from "./config.js";
 
 const solutions = [
@@ -92,20 +92,10 @@ const questions = [
   },
 ];
 
-function Brand({ light = false }) {
+function Brand() {
   return (
-    <a
-      className={`brand ${light ? "brand-light" : ""}`}
-      href="#inicio"
-      aria-label="HOLD, início"
-    >
-      <svg className="brand-symbol" viewBox="0 0 32 36" aria-hidden="true">
-        <path d="M0 0h8v14h16V0h8v36h-8V22H8v14H0z" fill="currentColor" />
-        <path d="M12 0h8v9h-8z" fill="currentColor" opacity=".35" />
-      </svg>
-      <span className="brand-word">
-        HOLD<span className="brand-dot">.</span>
-      </span>
+    <a className="brand" href="#inicio" aria-label="HOLD, início">
+      <BrandLogo />
     </a>
   );
 }
@@ -451,7 +441,7 @@ export default function App() {
             </div>
             <div className="hero-footnote">
               <span className="footnote-line" />
-              Seu negócio. Uma visão mais ampla.
+              Pessoas no centro. Estratégia em movimento.
             </div>
           </div>
           <div className="hero-art">
@@ -465,23 +455,25 @@ export default function App() {
 
         <div className="principles-band">
           <div className="container principles-inner">
-            <span className="principles-intro">
-              O futuro se constrói
-              <br />
-              <strong>com uma boa base.</strong>
-            </span>
-            <div>
-              <Network size={23} strokeWidth={1.4} />
-              <span>Governança que orienta</span>
-            </div>
-            <div>
-              <Layers3 size={23} strokeWidth={1.4} />
-              <span>Gestão que conecta</span>
-            </div>
-            <div>
-              <Route size={23} strokeWidth={1.4} />
-              <span>Estratégia que move</span>
-            </div>
+            {[
+              ["H", "Humanizar", "Pessoas no centro"],
+              ["O", "Organizar", "Clareza na gestão"],
+              ["L", "Liderar", "Direção compartilhada"],
+              ["D", "Desenvolver", "Evolução com propósito"],
+            ].map(([initial, title, description]) => (
+              <div className="brand-pillar" key={initial}>
+                <span className="pillar-initial" aria-hidden="true">
+                  {initial}
+                </span>
+                <span className="pillar-copy">
+                  <strong>
+                    {title}
+                    {initial !== "D" && <span>&</span>}
+                  </strong>
+                  <small>{description}</small>
+                </span>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -653,15 +645,38 @@ export default function App() {
               <span className="about-small-label">
                 A FORÇA ESTÁ NA CONEXÃO.
               </span>
-              <div className="architecture">
-                <span className="arch arch-one" />
-                <span className="arch arch-two" />
-                <span className="arch arch-three" />
-                <span className="arch-base" />
-                <span className="arch-dot" />
+              <div className="brand-constellation">
+                <svg
+                  className="constellation-lines"
+                  viewBox="0 0 480 420"
+                  fill="none"
+                >
+                  <circle cx="240" cy="205" r="140" />
+                  <circle cx="240" cy="205" r="178" />
+                  <path d="M36 325L95 178L194 74L353 116L430 280L300 366L36 325M95 178L353 116L300 366L194 74M95 178L430 280" />
+                  <g>
+                    <circle cx="95" cy="178" r="4" />
+                    <circle cx="194" cy="74" r="4" />
+                    <circle cx="353" cy="116" r="4" />
+                    <circle cx="430" cy="280" r="4" />
+                    <circle cx="300" cy="366" r="4" />
+                    <circle cx="36" cy="325" r="4" />
+                  </g>
+                </svg>
+                <BrainMark className="about-brain" decorative />
+                <span className="constellation-word word-humanizar">
+                  HUMANIZAR
+                </span>
+                <span className="constellation-word word-organizar">
+                  ORGANIZAR
+                </span>
+                <span className="constellation-word word-liderar">LIDERAR</span>
+                <span className="constellation-word word-desenvolver">
+                  DESENVOLVER
+                </span>
               </div>
               <span className="about-art-label">
-                BASE SÓLIDA. HORIZONTES ABERTOS.
+                INTELIGÊNCIA QUE CONECTA. GESTÃO QUE TRANSFORMA.
               </span>
             </div>
             <div className="about-copy">
@@ -680,12 +695,13 @@ export default function App() {
                 estratégia da vida real.
               </p>
               <p>
-                A HOLD nasce desse encontro: visão de longo prazo com os pés no
-                dia a dia. Uma parceria para organizar ideias, conectar pessoas
-                e transformar intenção em movimento.
+                Humanizar, Organizar, Liderar e Desenvolver. A HOLD nasce desse
+                encontro: visão de longo prazo com os pés no dia a dia. Uma
+                parceria para conectar pessoas e transformar intenção em
+                movimento.
               </p>
               <div className="about-signature">
-                <span className="signature-mark">H.</span>
+                <BrainMark className="signature-brain" decorative />
                 <span>
                   Próximos das pessoas.
                   <br />
@@ -794,7 +810,7 @@ export default function App() {
               </div>
             </div>
             <div className="contact-arrow" aria-hidden="true">
-              <MoveUpRight strokeWidth={0.6} />
+              <BrainMark className="contact-brain" decorative />
             </div>
           </div>
         </section>
@@ -833,7 +849,9 @@ export default function App() {
               © {new Date().getFullYear()} HOLD. Todos os direitos reservados.
             </span>
             <span>Governança & Soluções Empresariais</span>
-            <span className="footer-domain">holdsolution.com.br</span>
+            <a className="footer-domain" href="https://www.holdsolution.com">
+              holdsolution.com
+            </a>
           </div>
         </div>
       </footer>
