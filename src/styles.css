@@ -318,38 +318,6 @@ h3 {
   padding-block: 18px;
   margin-top: -38px;
 }
-.principles-band {
-  background: #edf0e5;
-  border-block: 1px solid #e3e7db;
-  margin-top: 6px;
-}
-.principles-inner {
-  min-height: 112px;
-  display: grid;
-  grid-template-columns: 1.05fr 1fr 1fr 1fr;
-  align-items: center;
-  gap: 32px;
-}
-.principles-intro {
-  font-size: 12px;
-  line-height: 1.6;
-  color: #5f6f51;
-}
-.principles-intro strong {
-  font-weight: 500;
-  color: #324d3b;
-}
-.principles-inner > div {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  font-size: 12px;
-  border-left: 1px solid #d2d9c7;
-  padding-left: 30px;
-}
-.principles-inner > div svg {
-  color: #567447;
-}
 .section-heading {
   display: flex;
   justify-content: space-between;
@@ -1160,14 +1128,6 @@ body:has(dialog[open]) {
   .hero-art {
     margin-top: -50px;
   }
-  .principles-inner {
-    gap: 18px;
-  }
-  .principles-inner > div {
-    padding-left: 18px;
-    gap: 9px;
-    font-size: 10px;
-  }
   .section-space {
     padding-block: 85px;
   }
@@ -1294,22 +1254,6 @@ body:has(dialog[open]) {
   }
   .hero-index {
     margin-top: -25px;
-  }
-  .principles-inner {
-    min-height: 96px;
-    gap: 12px;
-  }
-  .principles-intro {
-    font-size: 10px;
-  }
-  .principles-inner > div {
-    font-size: 9px;
-    gap: 8px;
-    padding-left: 12px;
-  }
-  .principles-inner > div svg {
-    width: 18px;
-    height: 18px;
   }
   .section-space {
     padding-block: 72px;
@@ -1564,38 +1508,6 @@ body:has(dialog[open]) {
     padding-block: 16px;
     font-size: 7px;
     letter-spacing: 1px;
-  }
-  .principles-band {
-    margin-top: 0;
-  }
-  .principles-inner {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0;
-    padding-block: 23px;
-  }
-  .principles-intro {
-    font-size: 12px;
-    line-height: 1.7;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #d3dcc8;
-    margin-bottom: 8px;
-  }
-  .principles-intro br {
-    display: none;
-  }
-  .principles-intro strong:before {
-    content: " ";
-  }
-  .principles-inner > div {
-    border-left: 0;
-    padding: 12px 0;
-    font-size: 12px;
-    gap: 13px;
-  }
-  .principles-inner > div svg {
-    width: 21px;
-    height: 21px;
   }
   .section-space {
     padding-block: 64px;

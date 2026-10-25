@@ -36,6 +36,13 @@ select:focus-visible,
   background: #081315f2;
   border-color: #20383c;
 }
+.header-inner {
+  height: 88px;
+}
+.site-header .brand,
+.site-header .hold-brand-logo--compact {
+  width: 148px;
+}
 .brand {
   width: 242px;
   gap: 0;
@@ -81,6 +88,9 @@ select:focus-visible,
 }
 .hero {
   isolation: isolate;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 52px;
+  padding-top: 70px;
 }
 .hero:before {
   content: "";
@@ -103,9 +113,21 @@ select:focus-visible,
 .hero h1 > span {
   color: var(--accent);
 }
+.hero h1 {
+  font-size: clamp(52px, 4.65vw, 68px);
+  letter-spacing: -3.5px;
+  line-height: 1.1;
+}
+.hero-art {
+  margin-top: -40px;
+}
 .hero-description {
   color: #a6bdbd;
   font-size: 15px;
+  max-width: 420px;
+}
+.hero-index {
+  margin-top: -15px;
 }
 .hero-explore {
   border-color: #3a565b;
@@ -123,51 +145,6 @@ select:focus-visible,
 }
 .hero-index {
   border-color: var(--line);
-}
-.principles-band {
-  background: #0c1e21;
-  border-color: var(--line);
-}
-.principles-inner {
-  grid-template-columns: repeat(4, 1fr);
-  min-height: 128px;
-  gap: 0;
-}
-.principles-inner > .brand-pillar {
-  gap: 18px;
-  padding-left: 35px;
-  border-color: #29464a;
-}
-.principles-inner > .brand-pillar:first-child {
-  padding-left: 0;
-  border-left: 0;
-}
-.pillar-initial {
-  font-family: var(--heading);
-  color: #70d0c9;
-  font-size: 38px;
-  font-weight: 400;
-  line-height: 1;
-}
-.pillar-copy {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-.pillar-copy strong {
-  font-family: var(--heading);
-  color: var(--ink);
-  font-size: 17px;
-  font-weight: 500;
-  letter-spacing: -0.3px;
-}
-.pillar-copy strong > span {
-  color: var(--accent);
-  margin-left: 2px;
-}
-.pillar-copy small {
-  color: #a3bcbc;
-  font-size: 10px;
 }
 .eyebrow {
   color: #b4d4d1;
@@ -423,6 +400,12 @@ select:focus-visible,
 .footer-bottom {
   color: #a5bdbb;
 }
+.footer-top .brand {
+  width: 285px;
+}
+.footer-top .hold-brand-logo {
+  width: 100%;
+}
 .footer-nav {
   color: #c5dcda;
 }
@@ -478,21 +461,16 @@ select:focus-visible,
   color: #c1deda;
 }
 @media (max-width: 1100px) {
+  .hero {
+    gap: 28px;
+    padding-top: 54px;
+  }
+  .hero h1 {
+    font-size: clamp(45px, 5.2vw, 60px);
+    letter-spacing: -2.6px;
+  }
   .brand {
     width: 222px;
-  }
-  .principles-inner > .brand-pillar {
-    padding-left: 25px;
-    gap: 13px;
-  }
-  .pillar-initial {
-    font-size: 33px;
-  }
-  .pillar-copy strong {
-    font-size: 15px;
-  }
-  .pillar-copy small {
-    font-size: 9px;
   }
   .hero-description {
     font-size: 14px;
@@ -519,6 +497,10 @@ select:focus-visible,
   }
 }
 @media (max-width: 800px) {
+  .site-header .brand,
+  .site-header .hold-brand-logo--compact {
+    width: 125px;
+  }
   .brand {
     width: 196px;
   }
@@ -527,20 +509,6 @@ select:focus-visible,
   }
   .hero-description {
     font-size: 13px;
-  }
-  .principles-inner > .brand-pillar {
-    padding-left: 16px;
-    gap: 10px;
-  }
-  .pillar-initial {
-    font-size: 29px;
-  }
-  .pillar-copy strong {
-    font-size: 13px;
-  }
-  .pillar-copy small {
-    font-size: 8px;
-    line-height: 1.5;
   }
   .about-brain {
     width: 140px;
@@ -584,6 +552,10 @@ select:focus-visible,
   }
   .hero {
     padding-top: 37px;
+    gap: 0;
+  }
+  .hero-copy {
+    padding-bottom: 22px;
   }
   .hero h1 {
     font-size: clamp(50px, 11.7vw, 73px);
@@ -592,36 +564,13 @@ select:focus-visible,
     font-size: 14px;
   }
   .hero-art {
-    margin-top: 12px;
+    margin-top: 22px;
+  }
+  .hero-index {
+    margin-top: 0;
+    border-top: 0;
   }
   .hero-footnote {
-    font-size: 9px;
-  }
-  .principles-inner {
-    grid-template-columns: 1fr 1fr;
-    padding-block: 0;
-  }
-  .principles-inner > .brand-pillar {
-    padding: 24px 14px;
-    gap: 13px;
-    min-height: 105px;
-  }
-  .principles-inner > .brand-pillar:first-child {
-    padding-left: 14px;
-  }
-  .principles-inner > .brand-pillar:nth-child(odd) {
-    border-left: 0;
-  }
-  .principles-inner > .brand-pillar:nth-child(n + 3) {
-    border-top: 1px solid #29464a;
-  }
-  .pillar-initial {
-    font-size: 32px;
-  }
-  .pillar-copy strong {
-    font-size: 14px;
-  }
-  .pillar-copy small {
     font-size: 9px;
   }
   .section-description,
@@ -685,21 +634,5 @@ select:focus-visible,
 @media (max-width: 360px) {
   .brand {
     width: 193px;
-  }
-  .principles-inner > .brand-pillar {
-    padding-inline: 8px;
-    gap: 8px;
-  }
-  .principles-inner > .brand-pillar:first-child {
-    padding-left: 8px;
-  }
-  .pillar-initial {
-    font-size: 27px;
-  }
-  .pillar-copy strong {
-    font-size: 12px;
-  }
-  .pillar-copy small {
-    font-size: 8px;
   }
 }

@@ -24,11 +24,15 @@ No aplicativo de videoconferência, selecione o PNG em **Plano de fundo virtual 
 
 ## Componentes e manutenção
 
-`BrandLogo.jsx` desenha a marca com vetores e suporta uma versão compacta. `BrainMark.jsx` mantém o cérebro e a base consistentes no cabeçalho, na apresentação, no símbolo de aba e nos detalhes do site. `HeroVisual.jsx` usa a mesma linguagem de redes e ondas do fundo de reuniões.
+O layout apresenta a marca completa na abertura e no rodapé. O cabeçalho usa uma versão compacta, sem a assinatura pequena. `HeroVisual.jsx` reúne a logo, uma rede discreta e as ondas turquesa em uma composição sem cartões sobre a marca. `BrandPrinciples.jsx` apresenta Humanizar, Organizar, Liderar e Desenvolver em quatro blocos com igual destaque, adaptados para tablet e celular.
+
+`BrandLogo.jsx` aceita um arquivo de imagem em `assetSrc` e mantém uma alternativa vetorial. A abertura e o rodapé usam `/brand/hold-logo.svg`; o cabeçalho compacto usa o desenho vetorial. `BrainMark.jsx` mantém o cérebro e a base consistentes no símbolo de aba e nos detalhes do site.
 
 Os SVGs de download podem ser atualizados com `node scripts/export-brand.mjs` enquanto o servidor de desenvolvimento está em execução. A exportação usa os componentes renderizados e não contém credenciais.
 
-Os PNGs são refinamentos das imagens fornecidas, produzidos com a ferramenta de imagem. O SVG é uma reconstrução vetorial da marca para a interface, não uma conversão automática do raster original. Os arquivos originais e os resultados intermediários foram preservados fora do checkout.
+Os PNGs são refinamentos das imagens fornecidas, produzidos com a ferramenta de imagem. O SVG é uma reconstrução vetorial da marca para a interface, não uma conversão automática do raster original. Os resultados gerados e intermediários foram preservados fora do checkout.
+
+O arquivo original da logo anexada à conversa não está disponível no checkout. Para reproduzir a marca oficial sem diferenças de traçado ou tipografia, substitua a reconstrução pelo PNG ou SVG original e atualize também o uso compacto do cabeçalho. Não apresente os arquivos reconstruídos ou gerados como originais oficiais.
 
 ## Publicação
 

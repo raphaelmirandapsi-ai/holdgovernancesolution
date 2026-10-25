@@ -19,6 +19,7 @@ import {
 import HeroVisual from "./components/HeroVisual.jsx";
 import BrandLogo from "./components/BrandLogo.jsx";
 import BrainMark from "./components/BrainMark.jsx";
+import BrandPrinciples from "./components/BrandPrinciples.jsx";
 import { contact } from "./config.js";
 
 const solutions = [
@@ -92,10 +93,13 @@ const questions = [
   },
 ];
 
-function Brand() {
+function Brand({ compact = false }) {
   return (
     <a className="brand" href="#inicio" aria-label="HOLD, início">
-      <BrandLogo />
+      <BrandLogo
+        compact={compact}
+        assetSrc={compact ? undefined : "/brand/hold-logo.svg"}
+      />
     </a>
   );
 }
@@ -362,7 +366,7 @@ export default function App() {
       </a>
       <header className="site-header">
         <div className="container header-inner">
-          <Brand />
+          <Brand compact />
           <nav
             id="main-navigation"
             className={`navigation ${menuOpen ? "is-open" : ""}`}
@@ -453,29 +457,7 @@ export default function App() {
           </div>
         </section>
 
-        <div className="principles-band">
-          <div className="container principles-inner">
-            {[
-              ["H", "Humanizar", "Pessoas no centro"],
-              ["O", "Organizar", "Clareza na gestão"],
-              ["L", "Liderar", "Direção compartilhada"],
-              ["D", "Desenvolver", "Evolução com propósito"],
-            ].map(([initial, title, description]) => (
-              <div className="brand-pillar" key={initial}>
-                <span className="pillar-initial" aria-hidden="true">
-                  {initial}
-                </span>
-                <span className="pillar-copy">
-                  <strong>
-                    {title}
-                    {initial !== "D" && <span>&</span>}
-                  </strong>
-                  <small>{description}</small>
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
+        <BrandPrinciples />
 
         <section
           id="solucoes"
